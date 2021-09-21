@@ -20,4 +20,4 @@ def section():
 
 # TODO: your core here...
 
-print("Длина ломаной линии = ", section())
+print(f"Длина ломаной линии = {section()}")
