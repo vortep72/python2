@@ -11,7 +11,6 @@ class Coin:
         """
         sides = ['heads', 'tails']      # heads-орел/tails-решка
         self.side = random.choice(sides)  # random: heads/tails
-        return self.side
 
 
 count = int(input("Введите количество монет: "))
@@ -27,9 +26,12 @@ for coin in coins:
 for char in sides_coins:
     if char == 'heads':
         heads += 1
-    if char == 'tails':
+    # if char == 'tails':
+    else:
         tails += 1
 count = heads + tails
-
+print(coins)
+print(heads)
+print(tails)
 print(f'Орёл выпал в {heads * 100 / count}% подбрасывания монетки')
 print(f'Решка выпала в {tails * 100 / count}% подбрасывания монетки')
