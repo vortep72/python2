@@ -21,9 +21,9 @@ class Triangle:
 
     def area(self):
         pol_perimeter = self.perimeter() / 2
-        s = (pol_perimeter - self.point1.dist_to(self.point2)) * (
+        s = (pol_perimeter * (pol_perimeter - self.point1.dist_to(self.point2)) * (
                     pol_perimeter - self.point2.dist_to(self.point3)) * (
-                        pol_perimeter - self.point3.dist_to(self.point1)) ** 0.5
+                        pol_perimeter - self.point3.dist_to(self.point1))) ** 0.5
         return s
 
 
